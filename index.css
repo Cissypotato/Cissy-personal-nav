@@ -1,0 +1,26 @@
+*{margin: 0;padding: 0;}
+body{background: gray url(./images/banner-11.jpg) no-repeat center center;background-size: cover;}
+
+header{height:60px;background:rgba(0,0,0,0.8);}
+header>img{margin-left: 25%;margin-top: 10px;cursor: pointer;position: relative;}
+header>img:nth-child(2){margin-left:-80px;opacity: 0.3;}
+header>p{position: absolute;right: 20%;color: #fff;top: 20px;opacity: 0.6;letter-spacing: 0.15em;font-weight: 300;
+	font-size: 14px;cursor: pointer;}
+main{text-align: center;height: 100vh;display: flex;align-items: center;justify-content: center;margin-top: -60px;
+	background:rgba(0,0,0,0.5);min-height: 600px;}
+#wrapper{display: inline-block;background: rgba(143,160,178,0.5);border-radius: 10px;padding-top: 10px;}
+#wrapper>.row{margin: 20px;}
+#wrapper>.row:nth-child(2){margin-left: -22px;}
+#wrapper>.row:nth-child(3){margin-left: -80px;}
+#wrapper>.row>kbd{text-transform: uppercase;position: relative;}
+#wrapper>.row>kbd>button{display: none;position: absolute;right: 0;bottom: 0;}
+#wrapper>.row>kbd:hover >button{display: block;}
+.key{width: 50px;height: 40px;background: linear-gradient(to bottom,#292929 0%,#111 100%);border: 1px solid #373737;
+	color: #c5c5c5;border-radius: 6px;box-shadow: 0 0 0 1px #1f2020,0 0 0 2px #1f2020, 0 3px 0 2px #080808;
+	margin: 0 10px;font-size: 16px;font-family: h;display:inline-block;}
+.key img{width: 16px;height: 16px;position: absolute;left: 0;bottom: 0;}
+.key .text{position: absolute;top: 2px;left: 4px;}
+
+
+footer{height: 40px;background: #080808;margin-top: -40px;opacity: 0.6;font-size: 12px;text-align: center;
+	color: #fff;line-height: 40px;font-weight: 300;}
