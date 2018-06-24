@@ -105,11 +105,18 @@
 	 }
 
 	 document.onkeypress=function (argument) {
-	 	console.log(argument.key);
 	 	var key=argument.key;
 	 	website=hash[key];
 	 	// location.href='http://'+website;//在当前页面地址栏输入（在当前页面打开）
-	 	window.open('http://'+website,'_blank');//在新的页面打开
+		 var pattern=/^http/
+		 var aa=pattern.exec(website)
+		 console.log(aa)
+		if(aa){
+			window.open(website,'_blank')
+		}else{
+			window.open('http://'+website,'_blank');
+		}
+	 	//在新的页面打开
 
 	 }
 	 
