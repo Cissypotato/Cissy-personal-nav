@@ -44,8 +44,8 @@ function tag(tagName,attributes){
 for(var i=0;i<keys.length;i++){
     var row=keys[i];
     var div=tag('div',{className:"row"});
-   var wrapper=document.getElementById('wrapper');
-   wrapper.appendChild(div);
+    var wrapper=document.getElementById('wrapper');
+    wrapper.appendChild(div);
 
     for(var n=0;n<row.length;n++){
         var kbd=tag('kbd',{className:'key'});
