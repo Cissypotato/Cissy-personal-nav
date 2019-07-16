@@ -90,7 +90,7 @@ document.onkeypress=function (argument) {
     // location.href='http://'+website;//在当前页面地址栏输入（在当前页面打开）
     var pattern=/^http/
     var aa=pattern.exec(website)
-    console.log(aa)
+    // console.log(aa)
    if(aa){
        window.open(website,'_blank')
    }else{
